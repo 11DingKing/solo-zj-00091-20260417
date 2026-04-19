@@ -9,6 +9,7 @@ import ActivatePage from "./modules/auth/pages/ActivatePage";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./modules/auth/pages/LoginPage";
 import PropertiesPage from "./modules/properties/pages/PropertiesPage";
+import ProfilePage from "./modules/profile/pages/ProfilePage";
 import RegisterPage from "./modules/auth/pages/RegisterPage";
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/activate/:uid/:token" element={<ActivatePage />} />
+            <Route path="/profile" element={<ProfilePage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
           <ToastContainer theme="dark" />
