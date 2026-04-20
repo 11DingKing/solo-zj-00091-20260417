@@ -10,7 +10,7 @@ WORKDIR ${APP_HOME}
 
 COPY ./package*.json .
 
-RUN npm install
+RUN npm install --registry=https://registry.npmmirror.com
 
 COPY . ${APP_HOME}
 
